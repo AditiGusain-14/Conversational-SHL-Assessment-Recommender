@@ -18,7 +18,7 @@ try:
     _api_key = os.environ.get("GROQ_API_KEY", "")
     if not _api_key:
         raise ValueError("GROQ_API_KEY not set")
-    _client = OpenAI(
+    client = Groq(
         api_key=_api_key,
         base_url="https://api.groq.com/openai/v1"
     )
