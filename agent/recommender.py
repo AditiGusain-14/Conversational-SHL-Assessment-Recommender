@@ -96,7 +96,7 @@ def _llm_table(prompt: str) -> Optional[str]:
             ],
             temperature=0.1,
             max_tokens=800,
-            timeout=30,
+            timeout=120,
         )
         print("[recommender] Groq table response received")
         content = response.choices[0].message.content

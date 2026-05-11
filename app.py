@@ -353,7 +353,7 @@ def send_message(text: str):
                     for m in st.session_state.messages
                 ]
             },
-            timeout=30,
+            timeout=120,
         )
         resp.raise_for_status()
         data = resp.json()
