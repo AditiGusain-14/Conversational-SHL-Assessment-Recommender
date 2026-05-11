@@ -12,7 +12,7 @@ from typing import Optional
 from dotenv import load_dotenv
 load_dotenv()
 
-from openai import OpenAI
+from groq import Groq
 
 try:
     _api_key = os.environ.get("GROQ_API_KEY", "")

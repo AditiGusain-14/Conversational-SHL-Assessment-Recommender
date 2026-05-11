@@ -8,7 +8,7 @@ import os
 from typing import Optional
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from groq import Groq
 
 from agent.intent_classifier import classify_intent
 from agent.constraint_extractor import extract_constraints

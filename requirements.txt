@@ -13,6 +13,6 @@ huggingface-hub==0.34.4
 
 groq==0.31.0
 
-numpy==2.3.2
-scikit-learn==1.7.1
+numpy==1.26.4
+scikit-learn==1.5.2
 pandas==2.3.1
