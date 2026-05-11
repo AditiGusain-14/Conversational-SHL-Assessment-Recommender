@@ -205,7 +205,7 @@ if "input_key" not in st.session_state:
     st.session_state.input_key = 0
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
-API_URL = "http://localhost:8000"
+API_URL = "https://conversational-shl-assessment-recommender.onrender.com"
 
 with st.sidebar:
     st.markdown("### ⚙️ Settings")
