@@ -12,7 +12,7 @@ from groq import Groq
 
 from agent.intent_classifier import classify_intent
 from agent.constraint_extractor import extract_constraints
-from retrieval.reranker import hybrid_search
+
 
 # ── Load environment variables ────────────────────────────────────────────────
 load_dotenv()
@@ -349,7 +349,7 @@ def _reply_compare(latest_message: str, results: list, history: str):
 # ── Main entrypoint ───────────────────────────────────────────────────────────
 
 def recommend_from_conversation(messages: list) -> dict:
-
+    from retrieval.reranker import hybrid_search
     latest_message = messages[-1]["content"]
     history        = _history_summary(messages)
 
