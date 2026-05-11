@@ -1,0 +1,13 @@
+{
+  "id": "trace_01",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Need Java developer assessment with personality testing"
+    }
+  ],
+  "expected_assessments": [
+    "Core Java (Advanced Level) (New)",
+    "Java 8 (New)"
+  ]
+}
